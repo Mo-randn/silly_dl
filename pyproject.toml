@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "silly_dl"
+version = "0.1.0"
+description = "A barebone deep learning framework to experiment and explore silly ideas"
+authors = [
+  { name = "Moritz", email = "moritzmk [at] gmx [dot] de" }
+]
+
+dependencies = [] # defined in requirements.txt
+
+[tool.setuptools.packages.find]
+include = ["silly_dl"]
+exclude = ["data", "scripts", "tests"]
